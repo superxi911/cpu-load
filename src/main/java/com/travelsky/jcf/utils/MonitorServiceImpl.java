@@ -1,12 +1,11 @@
 package com.travelsky.jcf.utils;
 import java.io.InputStreamReader;   
-import java.io.LineNumberReader;   
-  
-import sun.management.ManagementFactory;   
+import java.io.LineNumberReader;
   
 import com.sun.management.OperatingSystemMXBean;   
 import com.travelsky.jcf.bean.IMonitorService;
 import com.travelsky.jcf.bean.MonitorInfoBean;
+import sun.management.ManagementFactoryHelper;
 
 import java.io.*;   
 import java.util.StringTokenizer;   
@@ -43,7 +42,7 @@ public class MonitorServiceImpl implements IMonitorService {
         // 最大可使用内存   
         long maxMemory = Runtime.getRuntime().maxMemory() / kb;   
   
-        OperatingSystemMXBean osmxb = (OperatingSystemMXBean) ManagementFactory   
+        OperatingSystemMXBean osmxb = (OperatingSystemMXBean) ManagementFactoryHelper
                 .getOperatingSystemMXBean();   
   
         // 操作系统   
