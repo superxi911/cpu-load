@@ -1,0 +1,12 @@
+---
+
+prebulid:
+  dockerfile_name: Dockerfile_pre
+build:
+  dockerfile_name: Dockerfile
+deploy:
+  - application: cpuload
+    cluster: 1a8f58a8-845c-4a1f-8cb4-cc1de57ed312
+    partition: test
+    containers:
+    - cpuload
