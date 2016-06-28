@@ -1,6 +1,6 @@
 ---
 
-pre_bulid:
+pre_build:
   dockerfile_name: Dockerfile_pre
 build:
   dockerfile_name: Dockerfile
