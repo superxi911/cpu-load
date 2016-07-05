@@ -1,0 +1,5 @@
+FROM index.caicloud.io/daniel/maven 
+
+WORKDIR /root
+COPY . /root
+RUN mvn clean package -DskipTests

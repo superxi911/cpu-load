@@ -1,0 +1,14 @@
+---
+
+pre_build:
+  dockerfile_name: Dockerfile_pre
+  outputs:
+    - /root/target/cpu-load-0.0.1-SNAPSHOT.war
+build:
+  dockerfile_name: Dockerfile
+deploy:
+  - application: cpuload
+    cluster: 21fcdc74-0979-4dd8-9805-7d0e2b66e975
+    partition: test
+    containers:
+    - cpuload
