@@ -1,16 +1,15 @@
-package com.travelsky.jcf.controller;
+package com.sample.org.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.travelsky.jcf.bean.IMonitorService;
-import com.travelsky.jcf.bean.MonitorInfoBean;
-import com.travelsky.jcf.utils.MonitorServiceImpl;
+import com.sample.org.bean.IMonitorService;
+import com.sample.org.bean.MonitorInfoBean;
+import com.sample.org.utils.MonitorServiceImpl;
 
 public class getCpuRatioServlet extends HttpServlet {
 
@@ -42,7 +41,7 @@ public class getCpuRatioServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		IMonitorService service = new MonitorServiceImpl();  
+		IMonitorService service = new MonitorServiceImpl();
 		MonitorInfoBean monitorInfo =null;
         try {
 			monitorInfo = service.getMonitorInfoBean();

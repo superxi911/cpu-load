@@ -1,4 +1,4 @@
-package com.travelsky.jcf.utils;
+package com.sample.org.utils;
 
 public class Bytes {
 

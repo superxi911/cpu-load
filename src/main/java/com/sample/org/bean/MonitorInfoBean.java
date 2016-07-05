@@ -1,4 +1,4 @@
-package com.travelsky.jcf.bean;
+package com.sample.org.bean;
 
 public class MonitorInfoBean {
 

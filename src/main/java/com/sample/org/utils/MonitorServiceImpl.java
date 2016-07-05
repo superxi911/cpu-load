@@ -1,10 +1,10 @@
-package com.travelsky.jcf.utils;
+package com.sample.org.utils;
 import java.io.InputStreamReader;   
 import java.io.LineNumberReader;
-  
-import com.sun.management.OperatingSystemMXBean;   
-import com.travelsky.jcf.bean.IMonitorService;
-import com.travelsky.jcf.bean.MonitorInfoBean;
+
+import com.sample.org.bean.IMonitorService;
+import com.sun.management.OperatingSystemMXBean;
+import com.sample.org.bean.MonitorInfoBean;
 import sun.management.ManagementFactoryHelper;
 
 import java.io.*;   
@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
 * 获取系统信息的业务逻辑实现类.  
 * @author GuoHuang  
 */   
-public class MonitorServiceImpl implements IMonitorService {   
+public class MonitorServiceImpl implements IMonitorService {
      
     private static final int CPUTIME = 30;   
   

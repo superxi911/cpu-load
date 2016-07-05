@@ -1,27 +1,19 @@
-package com.travelsky.jcf.controller;
+package com.sample.org.controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.travelsky.jcf.utils.CustomThread;
-import com.travelsky.jcf.utils.MyThreads;
-
-public class reduceServlet extends HttpServlet {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class getEnvServlet extends HttpServlet {
 
 	/**
 	 * Constructor of the object.
 	 */
-	public reduceServlet() {
+	public getEnvServlet() {
 		super();
 	}
 
@@ -45,20 +37,8 @@ public class reduceServlet extends HttpServlet {
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String num = request.getParameter("num");
-		Integer number = null;
-		if(num!=null){
-			number = Integer.parseInt(num);
-		}
-		ArrayList<CustomThread> list = MyThreads.getInstance().getList();
-		
-		
-		for (int i = 0; i < number; i++) {
-			if(list.size()>=0)
-			list.remove(list.size()-1).stop();
-		}
-		System.out.println(list.size());
-		response.getWriter().write(String.valueOf(list.size()));
+		System.out.println(System.getenv().toString());
+		response.getWriter().write(System.getenv().toString());
 	}
 
 	/**
@@ -73,6 +53,7 @@ public class reduceServlet extends HttpServlet {
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
 		this.doGet(request, response);
 	}
 

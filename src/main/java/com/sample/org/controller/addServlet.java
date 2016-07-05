@@ -1,4 +1,4 @@
-package com.travelsky.jcf.controller;
+package com.sample.org.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.travelsky.jcf.utils.CustomThread;
-import com.travelsky.jcf.utils.MyThreads;
+import com.sample.org.utils.CustomThread;
+import com.sample.org.utils.MyThreads;
 
 
 public class addServlet extends HttpServlet {
