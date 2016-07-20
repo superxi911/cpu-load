@@ -1,4 +1,4 @@
-FROM index.caicloud.io/daniel/maven 
+FROM docker-registry.caicloudprivatetest.com/admin/maven
 
 WORKDIR /root
 COPY . /root
