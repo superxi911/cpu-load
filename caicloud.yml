@@ -1,11 +1,14 @@
 ---
 
 pre_build:
-  dockerfile_name: Dockerfile_pre
+  images: index.caicloud.io/daniel/maven:latest
+  volumes:
+    - .:/root/cpu-load
   commands:
-    - pwd
+    - cd /root/cpu-load
+    - mvn clean package
   outputs:
-    - /root/target/cpu-load-0.0.1-SNAPSHOT.war
+    - /root/cpu-load/target/cpu-load-0.0.1-SNAPSHOT.war
 build:
   dockerfile_name: Dockerfile
 deploy:
