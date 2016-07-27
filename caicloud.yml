@@ -2,6 +2,8 @@
 
 pre_build:
   dockerfile_name: Dockerfile_pre
+  commands:
+    - pwd
   outputs:
     - /root/target/cpu-load-0.0.1-SNAPSHOT.war
 build:
