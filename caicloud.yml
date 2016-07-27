@@ -1,7 +1,7 @@
 ---
 
 pre_build:
-  images: index.caicloud.io/daniel/maven:latest
+  image: index.caicloud.io/daniel/maven:latest
   volumes:
     - .:/root/cpu-load
   commands:
