@@ -69,7 +69,6 @@
 </script>
 <body>
 Nihao!
-Hallo
 	<div>
 		<input type="button" id="addButton" onClick="add()" value="Ôö¼Ó"/>
 		<input type="text" id="num"></input>
