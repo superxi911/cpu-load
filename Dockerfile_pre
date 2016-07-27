@@ -1,4 +1,4 @@
-FROM index.caicloud.io/daniel/maven
+FROM index.caicloud.io/daniel/maven:latest
 
 WORKDIR /root
 COPY . /root
