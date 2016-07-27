@@ -1,5 +1,5 @@
-FROM docker-registry.caicloudprivatetest.com/admin/maven
+FROM index.caicloud.io/daniel/maven
 
 WORKDIR /root
 COPY . /root
-RUN mvn clean package -DskipTests
+RUN mvn clean package
