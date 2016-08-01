@@ -69,6 +69,7 @@
 </script>
 <body>
 Nihao!
+Hallo
  <!--       <div>
 		<img src="./caicloud.png" />
         </div>-->
