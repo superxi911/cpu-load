@@ -69,7 +69,7 @@
 </script>
 <body>
 Nihao!
-Hallo
+Hallo!
  <!--       <div>
 		<img src="./caicloud.png" />
         </div>-->
