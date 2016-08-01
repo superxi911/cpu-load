@@ -13,7 +13,7 @@ build:
   dockerfile_name: Dockerfile
 deploy:
   - application: cpuload
-    cluster: 17af15d7-cb6d-4b2d-80cf-efc25a30b4f1
-    partition: autoscaling
+    cluster: d1ca713b-02d6-4bf9-99b5-254de50598b4
+    partition: dev
     containers:
     - cpuload
