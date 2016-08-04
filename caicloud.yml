@@ -1,7 +1,7 @@
 ---
 
 pre_build:
-  image: index.caicloud.io/daniel/maven:latest
+  image: docker-registry.caicloudprivatetest.com/caicloud/maven
   volumes:
     - .:/root/cpu-load
   commands:
@@ -13,7 +13,7 @@ build:
   dockerfile_name: Dockerfile
 deploy:
   - application: cpuload
-    cluster: d1ca713b-02d6-4bf9-99b5-254de50598b4
-    partition: dev
+    cluster: d9899b8f-f442-44b5-97a7-a96ba33894f9
+    partition: onlinemarketing
     containers:
     - cpuload
