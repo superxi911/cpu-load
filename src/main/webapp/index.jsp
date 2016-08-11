@@ -70,9 +70,9 @@
 <body>
 Nihao!
 Hallo!!
-        <div>
+<!--        <div>
 		<img src="./caicloud.png" />
-        </div>
+        </div> -->
 	<div>
 		<input type="button" id="addButton" onClick="add()" value="Ôö¼Ó"/>
 		<input type="text" id="num"></input>
