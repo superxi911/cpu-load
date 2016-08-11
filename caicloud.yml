@@ -12,8 +12,8 @@ pre_build:
 build:
   dockerfile_name: Dockerfile
 deploy:
-  - application: cpuload
-    cluster: d9899b8f-f442-44b5-97a7-a96ba33894f9
-    partition: onlinemarketing
+  - application: test0809
+    cluster: 7b648354-408b-4c46-a360-0f9fa41da17d
+    partition: test
     containers:
-    - cpuload
+    - tomcat
