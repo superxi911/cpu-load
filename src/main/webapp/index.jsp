@@ -70,6 +70,7 @@
 <body>
 Nihao!
 Hallo!!
+Aloha!!
 <!--        <div>
 		<img src="./caicloud.png" />
         </div> -->
