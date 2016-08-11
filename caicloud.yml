@@ -12,7 +12,7 @@ pre_build:
 build:
   dockerfile_name: Dockerfile
 deploy:
-  - application: test0809
+  - application: cpuload1
     cluster: 7b648354-408b-4c46-a360-0f9fa41da17d
     partition: test
     containers:
