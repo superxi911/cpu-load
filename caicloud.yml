@@ -1,7 +1,7 @@
 ---
 
 pre_build:
-  image: docker-registry.caicloudprivatetest.com/caicloud/maven
+  image: index.caicloud.com/caicloud/maven
   volumes:
     - .:/root/cpu-load
   commands:
@@ -13,7 +13,7 @@ build:
   dockerfile_name: Dockerfile
 deploy:
   - application: test0809
-    cluster: 7b648354-408b-4c46-a360-0f9fa41da17d
+    cluster: 229302a3-569e-4960-a09e-07fc4a5584a1
     partition: test
     containers:
     - tomcat
