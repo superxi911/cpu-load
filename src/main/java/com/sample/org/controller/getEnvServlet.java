@@ -38,7 +38,8 @@ public class getEnvServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println(System.getenv().toString());
-		response.getWriter().write(System.getenv().toString()+"\n"+"ClientIP: "+ getClientIpAddress(request));
+		//response.getWriter().write(System.getenv().toString()+"\n"+"ClientIP: "+ getClientIpAddress(request));
+		response.getWriter().write(System.getenv().toString());
 	}
 
 
