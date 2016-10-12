@@ -13,7 +13,7 @@ build:
   dockerfile_name: Dockerfile
 deploy:
   - application: cpuload
-    cluster: bd5330d0-ce52-4241-8dff-4cd8ed257c70
+    cluster: 07e09536-cd3c-4607-bf8e-8d75f8c18e81 
     partition: app1
     containers:
     - cpuload
