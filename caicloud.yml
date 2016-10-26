@@ -1,5 +1,4 @@
 ---
-
 pre_build:
   image: index.caicloud.io/daniel/maven
   volumes:
@@ -11,6 +10,11 @@ pre_build:
     - /root/cpu-load/target/cpu-load-0.0.1-SNAPSHOT.war
 build:
   dockerfile_name: Dockerfile
+integration:
+  ports:
+    - "8080:8080" 
+  commands:
+    - curl localhost:8080
 deploy:
   - application: cpuload
     cluster: 240ec41a-d576-4b81-938c-b56285afd8cc
