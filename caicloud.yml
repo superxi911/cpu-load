@@ -12,7 +12,7 @@ build:
   dockerfile_name: Dockerfile
 integration:
   services:
-    cpuload: BUILT_IMAGE
+    cpuload: buildimage
     ports: 
       - "8080:8080"
   image: busybox
