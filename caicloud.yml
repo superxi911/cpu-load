@@ -1,6 +1,6 @@
 ---
 pre_build:
-  image: cargo.caicloud.io/daniel/maven
+  image: cargo.caicloud.io/caicloud/maven:1
   volumes:
     - .:/root/cpu-load
   commands:
