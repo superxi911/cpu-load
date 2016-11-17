@@ -1,6 +1,6 @@
 ---
 pre_build:
-  image: index.caicloud.io/daniel/maven
+  image: cargo.caicloud.io/daniel/maven
   volumes:
     - .:/root/cpu-load
   commands:
@@ -11,10 +11,13 @@ pre_build:
 build:
   dockerfile_name: Dockerfile
 integration:
-  ports:
-    - "8080:8080" 
+  services:
+    cpuload: BUILT_IMAGE
+    ports: 
+      - "8080:8080"
+  image: busybox
   commands:
-    - curl localhost:8080
+    - curl cpuload:8080
 deploy:
   - application: cpuload
     cluster: 240ec41a-d576-4b81-938c-b56285afd8cc
