@@ -14,7 +14,6 @@ integration:
   services:
     cpuload: 
       image: BUILT_IMAGE
-      ports: "8080:8080"
   image: cargo.caicloud.io/caicloud/ubuntu:14.04
   commands:
     - curl cpuload:8080
