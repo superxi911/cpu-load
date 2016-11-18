@@ -14,9 +14,9 @@ integration:
   services:
     cpuload: 
       image: BUILT_IMAGE
-  image: cargo.caicloud.io/caicloud/ubuntu:14.04
+  image: cargo.caicloud.io/caicloud/alpine:3.4
   commands:
-    - apt-get update && apt-get install curl
+    - apk add --no-cache curl
     - curl cpuload:8080
 deploy:
   - application: cpuload
